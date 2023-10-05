@@ -47,10 +47,19 @@ const ListItem = styled.li`
     position: absolute;
     top: 0;
     left: 0;
+    color: pink;
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
   }
   &:hover {
     &::after {
-      color: rebeccapurple;
+      animation: moveText 0.5s linear both;
+      @keyframes moveText{
+        to{
+          width: 100%;
+        }
+      }
     }
   }
 `;
