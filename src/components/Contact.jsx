@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Map from './Map'
+
 
 const Section = styled.div`
   height: 100vh;
@@ -52,7 +54,10 @@ const Button = styled.button`
 const Right = styled.div`
   flex: 1;
 `
+const handleSubmit = e => {
+  e.preventDefault()
 
+}
 
 
 const Contact = () => {
@@ -60,16 +65,16 @@ const Contact = () => {
         <Section>
           <Container>
             <Left>
-              <Form>
+              <Form onSubmit={handleSubmit}>
                 <Title>Contact Us</Title>
                 <Input placeholder='Name'/>
                 <Input placeholder='Email'/>
                 <TextArea placeholder='Write your message' rows={10}/>
-                <Button>Send</Button>
+                <Button type="submit">Send</Button>
               </Form>
             </Left>
             <Right>
-
+            <Map />
             </Right>
           </Container>
         </Section>
