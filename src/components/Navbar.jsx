@@ -4,13 +4,21 @@ import styled from 'styled-components'
 const Section = styled.div`
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 768px){
+    width: 100px;
+  }
 `
 const Container = styled.div`
   width: 1400px;
-  background-color: ivory;
+  background-color: rgb(255, 245, 238, 0.3);
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  @media only screen and (max-width: 768px){
+    width: 100px;
+    padding: 10px;
+  }
 `
 const Links = styled.div`
 display: flex;
@@ -23,6 +31,9 @@ const List = styled.ul`
 display: flex;
 gap: 20px;
 list-style: none;
+@media only screen and (max-width: 768px){
+  display: None;
+}
 `
 const ListItem = styled.li`
 cursor: pointer;

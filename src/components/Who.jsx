@@ -1,5 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import { OrbitControls } from '@react-three/drei'
+import { Canvas } from '@react-three/fiber'
+import Cube from './Cube'
+
 
 const Section = styled.div`
   height: 100vh;
@@ -20,6 +24,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 gap: 20px;
+@media only screen and (max-width: 768px){
+  display: none;
+}
 `
 const Right = styled.div`
 flex: 1;
@@ -27,9 +34,16 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 gap: 20px;
+@media only screen and (max-width: 768px){
+  align-items: center;
+  text-align: center;
+}
 `
 const Title = styled.h1`
 font-size: 74px;
+@media only screen and (max-width: 768px){
+  font-size: 60px;
+}
 `
 const WhatWeDo = styled.div`
 display: flex;
@@ -62,7 +76,15 @@ const Who = () => {
         <Section>
           <Container>
             <Left>
-            {/* 3D-Model */}
+              <Canvas camera={{fov: 25, position: [5, 5, 5] }}>
+              <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.8}/> 
+              <ambientLight intensity={1}/>
+              <directionalLight position={[3,2,1]}/>
+              <mesh>
+                <boxGeometry/>
+                <Cube/>
+              </mesh>
+              </Canvas>
             </Left>
             <Right>
             <Title>Think Outside the Square space</Title>

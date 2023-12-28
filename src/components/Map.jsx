@@ -40,7 +40,7 @@ const Map = () => {
           strokeLinecap: "round"
         }}
       >
-        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
+        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="maroon">
           {"Vellore"}
         </text>
       </Annotation>
@@ -54,7 +54,7 @@ const Map = () => {
           strokeLinecap: "round"
         }}
       >
-        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
+        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="maroon">
           {"New York"}
         </text>
       </Annotation>

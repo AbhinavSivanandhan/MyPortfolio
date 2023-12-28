@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import DevOps from "./DevOps"
+import ArtificialIntelligence from "./ArtificialIntelligence"
+import WebDevelopment from "./WebDevelopment"
+import CloudComputing from "./CloudComputing"
+import Automation from "./Automation"
+
 // import './stylesheets/worksStyles.css'
 const data = [
   'Web Development',
-  'Data Science',
+  'Artificial Intelligence',
   'DevOps',
-  'Low Code Platforms',
+  'Cloud Computing',
   'Automation',
 ];
 
@@ -20,12 +26,20 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 768px){
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 768px){
+    padding: 20px;
+    justify-content: center;
+  }
 `;
 
 const List = styled.ul`
@@ -42,6 +56,11 @@ const ListItem = styled.li`
   color: transparent;
   -webkit-text-stroke: 1px white;
   position: relative;
+  @media only screen and (max-width: 768px){
+    font-size: 24px;
+    color: white;
+    -webkit-text-stroke: 0px;
+  }
   &::after {
     content: "${(props) => props.text}";
     position: absolute;
@@ -69,19 +88,36 @@ const Right = styled.div`
 `;
 
 const Works = () => {
+  const [work, setWork] = useState("Web Development")
+
+  
   return (
     <Section>
       <Container>
         <Left>
           <List>
             {data.map((item) => (
-              <ListItem key={item} text={item}>
+              <ListItem key={item} text={item} onClick={()=> setWork(item)}>
                 {item}
               </ListItem>
             ))}
           </List>
         </Left>
-        <Right></Right>
+        <Right>
+        {
+  work === "Web Development" ? (
+    <WebDevelopment />
+  ) : work === "DevOps" ? (
+    <DevOps />
+  ) : work === "Cloud Computing" ? (
+    <CloudComputing />
+  ) : work === "Automation" ? (
+    <Automation />
+  ) : (
+    <ArtificialIntelligence />
+  )
+}
+        </Right>
       </Container>
     </Section>
   );

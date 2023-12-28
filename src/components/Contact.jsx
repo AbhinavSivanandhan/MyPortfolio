@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components'
 import Map from './Map'
-
+import emailjs from '@emailjs/browser';
+// import dotenv from 'dotenv';
+// dotenv.config();
 
 const Section = styled.div`
   height: 100vh;
@@ -19,6 +21,9 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media only screen and (max-width: 768px){
+    justify-content: center;
+  }
 `
 const Title = styled.h1`
   font-weight: 200;
@@ -28,6 +33,9 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 25px;
+  @media only screen and (max-width: 768px){
+    width: 300px;
+  }
 `
 const Input = styled.input`
   padding: 20px;
@@ -53,24 +61,42 @@ const Button = styled.button`
 
 const Right = styled.div`
   flex: 1;
+  @media only screen and (max-width: 768px){
+    display: none;
+  }
 `
-const handleSubmit = e => {
-  e.preventDefault()
 
-}
 
 
 const Contact = () => {
+
+    const ref = useRef()
+    const [success, setSuccess] = useState(null)
+
+    const handleSubmit = e => {
+      e.preventDefault()
+      //emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, ref.current,process.env.REACT_APP_EMAILJS_USERID)
+      emailjs.sendForm('service_lq318z8', 'template_ac9j0rl', ref.current, 'gHd-3YkfOLfZpTicy')
+
+      .then((result) => {
+          console.log(result.text);
+          setSuccess(true);
+      }, (error) => {
+          console.log(error.text);
+          setSuccess(false);
+      });
+    }
     return (
         <Section>
           <Container>
             <Left>
-              <Form onSubmit={handleSubmit}>
-                <Title>Contact Us</Title>
-                <Input placeholder='Name'/>
-                <Input placeholder='Email'/>
-                <TextArea placeholder='Write your message' rows={10}/>
+              <Form ref={ref} onSubmit={handleSubmit}>
+                <Title>Contact Me !</Title>
+                <Input placeholder='Name' name='name'/>
+                <Input placeholder='Email' name='email'/>
+                <TextArea placeholder='Write your message' name='message' rows={10}/>
                 <Button type="submit">Send</Button>
+                {success && "Your message has been sent. I'll get back to you soon!!"}
               </Form>
             </Left>
             <Right>
