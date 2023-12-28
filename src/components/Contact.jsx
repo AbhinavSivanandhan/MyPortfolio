@@ -1,9 +1,11 @@
+//require('dotenv').config();
+
 import React, { useRef, useState } from 'react';
 import styled from 'styled-components'
 import Map from './Map'
 import emailjs from '@emailjs/browser';
-// import dotenv from 'dotenv';
-// dotenv.config();
+// import MyEnv from './MyEnv'; // Import the MyEnv component
+
 
 const Section = styled.div`
   height: 100vh;
@@ -76,8 +78,8 @@ const Contact = () => {
     const handleSubmit = e => {
       e.preventDefault()
       //emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, ref.current,process.env.REACT_APP_EMAILJS_USERID)
-      emailjs.sendForm('service_lq318z8', 'template_ac9j0rl', ref.current, 'gHd-3YkfOLfZpTicy')
-
+      //emailjs.sendForm('service_lq318z8', 'template_ac9j0rl', ref.current, 'gHd-3YkfOLfZpTicy')
+      emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, ref.current, process.env.REACT_APP_EMAILJS_USERID)
       .then((result) => {
           console.log(result.text);
           setSuccess(true);
