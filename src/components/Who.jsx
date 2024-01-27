@@ -87,10 +87,10 @@ const Who = () => {
               </Canvas>
             </Left>
             <Right>
-            <Title>Think Outside the Square space</Title>
+            <Title>Would you like to see my work?</Title>
             <WhatWeDo>
               <Line src="./img/line.png"/>
-              <Subtitle>Prioritizing impactful solutions over everything else. Substance over style.</Subtitle>
+              <Subtitle>Prioritizing impactful solutions. Substance over style.</Subtitle>
             </WhatWeDo>
             <Desc>
               Would you like to see my work?
