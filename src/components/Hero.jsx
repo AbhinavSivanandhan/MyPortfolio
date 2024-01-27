@@ -110,7 +110,7 @@ const Hero = () => {
           <Navbar/>
            <Container>
             <Left>
-            <Title>Hi there!</Title>
+            <Title>Hi there👋!</Title>
             <WhatWeDo>
               <Line src="./img/line.png"/>
               <Subtitle>Welcome to my digital space! </Subtitle>
