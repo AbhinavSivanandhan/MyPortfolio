@@ -64,7 +64,6 @@ const Navbar = () => {
               <ListItem>Contact</ListItem>
             </List>
             <Icons>
-              <Icon src="./img/hire.png" width="20" height="20"/>
               <Button>Hire Now</Button>
             </Icons>
             </Links>
