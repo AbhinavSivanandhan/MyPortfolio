@@ -93,7 +93,7 @@ const Who = () => {
               <Subtitle>Prioritizing impactful solutions. Substance over style.</Subtitle>
             </WhatWeDo>
             <Desc>
-              Would you like to see my work?
+              Crafting innovative solutions that bridge the gap between technology and real-world challenges.
             </Desc>
             <Button>Go for it!</Button>
             </Right>
