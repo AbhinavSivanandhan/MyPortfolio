@@ -110,13 +110,13 @@ const Hero = () => {
           <Navbar/>
            <Container>
             <Left>
-            <Title>Think. Make. Solve</Title>
+            <Title>👋 Hello, I'm Abhinav Sivanandhan!</Title>
             <WhatWeDo>
               <Line src="./img/line.png"/>
-              <Subtitle>What We Do</Subtitle>
+              <Subtitle>I specialize in crafting innovative solutions that bridge the gap between technology and real-world challenges</Subtitle>
             </WhatWeDo>
             <Desc>
-              We enjoy creating delightful human-centric digital experiences
+              Explore my journey in software development, where I've tackled projects ranging from AI-driven batch schedulers to scalable social media applications. Let's build the future together! 🚀
             </Desc>
             <Button>Learn More</Button>
             </Left>

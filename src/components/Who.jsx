@@ -90,7 +90,7 @@ const Who = () => {
             <Title>Think Outside the Square space</Title>
             <WhatWeDo>
               <Line src="./img/line.png"/>
-              <Subtitle>What We Do</Subtitle>
+              <Subtitle>Prioritizing impactful solutions over everything else. Substance over style.</Subtitle>
             </WhatWeDo>
             <Desc>
               Would you like to see my work?
