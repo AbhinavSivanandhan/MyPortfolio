@@ -130,7 +130,7 @@ background-color: pink;
 color: white;
 border: none;
 border-radius: 5px;
-`,gk=()=>ie(lk,{children:ie(ck,{children:St(uk,{children:[ie(fk,{src:"./img/logo.png",width:"300",height:"120"}),St(hk,{children:[ie(um,{children:"Home"}),ie(um,{children:"Studio"}),ie(um,{children:"Works"}),ie(um,{children:"Contact"})]}),St(dk,{children:[ie(pk,{src:"./img/hire.png",width:"20",height:"20"}),ie(mk,{children:"Hire Now"})]})]})})});function Cr(){return Cr=Object.assign?Object.assign.bind():function(n){for(var e=1;e<arguments.length;e++){var t=arguments[e];for(var r in t)Object.prototype.hasOwnProperty.call(t,r)&&(n[r]=t[r])}return n},Cr.apply(this,arguments)}/**
+`,gk=()=>ie(lk,{children:ie(ck,{children:St(uk,{children:[ie(fk,{src:"./img/logo.png",width:"300",height:"120"}),St(hk,{children:[ie(um,{children:"Home"}),ie(um,{children:"Studio"}),ie(um,{children:"Works"}),ie(um,{children:"Contact"})]}),St(dk,{children:[ie(mk,{children:"Hire Now"})]})]})})});function Cr(){return Cr=Object.assign?Object.assign.bind():function(n){for(var e=1;e<arguments.length;e++){var t=arguments[e];for(var r in t)Object.prototype.hasOwnProperty.call(t,r)&&(n[r]=t[r])}return n},Cr.apply(this,arguments)}/**
  * @license
  * Copyright 2010-2023 Three.js Authors
  * SPDX-License-Identifier: MIT
