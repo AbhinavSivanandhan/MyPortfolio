@@ -94,8 +94,11 @@ const Works = () => {
   return (
     <Section>
       <Container>
+
         <Left>
           <List>
+          Choose a skill:
+
             {data.map((item) => (
               <ListItem key={item} text={item} onClick={()=> setWork(item)}>
                 {item}
