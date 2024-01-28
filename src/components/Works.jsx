@@ -97,7 +97,7 @@ const Works = () => {
 
         <Left>
           <List>
-          Choose a skill:
+            -> Choose a skill:
 
             {data.map((item) => (
               <ListItem key={item} text={item} onClick={()=> setWork(item)}>
