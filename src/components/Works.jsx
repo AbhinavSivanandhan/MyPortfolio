@@ -66,7 +66,7 @@ const ListItem = styled.li`
     position: absolute;
     top: 0;
     left: 0;
-    color: pink;
+    color: #4D6F8F;
     width: 0px;
     overflow: hidden;
     white-space: nowrap;
@@ -92,7 +92,7 @@ const Works = () => {
 
   
   return (
-    <Section>
+    <Section id="skills">
       <Container>
 
         <Left>

@@ -53,7 +53,7 @@ const TextArea = styled.textarea`
  `
 const Button = styled.button`
   padding: 20px;
-  background-color: #ffb6c1;
+  background-color: #4D6F8F;
   color: white;
   border: none;
   font-family: 'Roboto', sans-serif;
@@ -90,7 +90,7 @@ const Contact = () => {
       });
     }
     return (
-        <Section>
+        <Section id="contact">
           <Container>
             <Left>
               <Form ref={ref} onSubmit={handleSubmit}>

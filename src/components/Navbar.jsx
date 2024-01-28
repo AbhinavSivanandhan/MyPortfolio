@@ -45,32 +45,57 @@ const Icon = styled.img`
 const Button = styled.button`
 width: 100px;
 padding: 10px;
-background-color: pink;
+background-color: #4D6F8F;
 color: white;
 border: none;
 border-radius: 5px;
 font-family: 'Roboto', sans-serif;
 `
 
+// const Navbar = () => {
+//     return (
+//         <Section>
+//           <Container>
+//             <Links>
+//             <Logo src="./img/logo.png" width="300" height="120"/>
+//             <List>
+//               <ListItem>Home</ListItem>
+//               <ListItem>Works</ListItem>
+//               <ListItem>Skills</ListItem>
+//               <ListItem>Contact</ListItem>
+//             </List>
+//             <Icons>
+//               {/* <Button>Hire Now</Button> */}
+//             </Icons>
+//             </Links>
+//           </Container>
+//         </Section>
+//     )
+// }
 const Navbar = () => {
-    return (
-        <Section>
-          <Container>
-            <Links>
-            <Logo src="./img/logo.png" width="300" height="120"/>
-            <List>
-              <ListItem>Home</ListItem>
-              <ListItem>Studio</ListItem>
-              <ListItem>Works</ListItem>
-              <ListItem>Contact</ListItem>
-            </List>
-            <Icons>
-              <Button>Hire Now</Button>
-            </Icons>
-            </Links>
-          </Container>
-        </Section>
-    )
-}
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <Section>
+      <Container>
+        <Links>
+          <Logo src="./img/logo.png" width="300" height="120" />
+          <List>
+            <ListItem onClick={() => scrollToSection('home')}>Home</ListItem>
+            <ListItem onClick={() => scrollToSection('works')}>Works</ListItem>
+            <ListItem onClick={() => scrollToSection('skills')}>Skills</ListItem>
+            <ListItem onClick={() => scrollToSection('contact')}>Contact</ListItem>
+          </List>
+          <Icons>{/* ... */}</Icons>
+        </Links>
+      </Container>
+    </Section>
+  );
+};
 
 export default Navbar

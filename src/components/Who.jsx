@@ -54,14 +54,14 @@ const Line = styled.img`
 height: 5px;
 `
 const Subtitle = styled.h2`
-color: pink;
+color: #D8D8C2;
 `
 const Desc = styled.p`
 font-size: 34px;
-color: lightgray;
+color: #536856;
 `
 const Button = styled.button`
-background-color: pink;
+background-color: #4D6F8F;
 color: white;
 font-family: 'Roboto', sans-serif;
 font-width: 500; 
@@ -74,7 +74,7 @@ cursor: pointer;
 
 const Who = () => {
     return (
-        <Section>
+        <Section id="works">
           <Container>
             <Left>
               <Canvas camera={{fov: 25, position: [5, 5, 5] }}>
@@ -90,7 +90,7 @@ const Who = () => {
             <Right>
             <Title>Would you like to see my work?</Title>
             <WhatWeDo>
-              <Line src="./img/line.png"/>
+              {/* <Line src="./img/line.png"/> */}
               <Subtitle>Prioritizing impactful solutions. Substance over style.</Subtitle>
             </WhatWeDo>
             <Desc>

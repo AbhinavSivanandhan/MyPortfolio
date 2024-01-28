@@ -54,18 +54,19 @@ const Line = styled.img`
 height: 5px;
 `
 const Subtitle = styled.h2`
-color: pink;
+color: #D8D8C2;
+font-weight: bold;
 `
 const Desc = styled.p`
 font-size: 34px;
-color: lightgray;
+color: #536856;
 @media only screen and (max-width: 768px){
   padding: 20px;
   text-align: center;
 }
 `
 const Button = styled.button`
-background-color: pink;
+background-color: #4D6F8F;
 color: white;
 font-family: 'Roboto', sans-serif;
 font-width: 500; 
@@ -107,7 +108,7 @@ animation: animate 2s infinite ease alternate;
 
 const Hero = () => {
     return (
-        <Section>
+        <Section id="home">
           <Navbar/>
            <Container>
             <Left>
