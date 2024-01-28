@@ -57,7 +57,7 @@ const ListItem = styled.li`
   -webkit-text-stroke: 1px black;
   position: relative;
   @media only screen and (max-width: 768px){
-    font-size: 24px;
+    font-size: 34px;
     color: white;
     -webkit-text-stroke: 0px;
   }
@@ -97,7 +97,7 @@ const Works = () => {
 
         <Left>
           <List>
-            -> Choose a skill:
+            --- Choose a skill ---
 
             {data.map((item) => (
               <ListItem key={item} text={item} onClick={()=> setWork(item)}>

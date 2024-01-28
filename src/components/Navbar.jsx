@@ -49,6 +49,7 @@ background-color: pink;
 color: white;
 border: none;
 border-radius: 5px;
+font-family: 'Roboto', sans-serif;
 `
 
 const Navbar = () => {

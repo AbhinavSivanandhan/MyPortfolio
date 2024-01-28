@@ -56,6 +56,7 @@ const Button = styled.button`
   background-color: #ffb6c1;
   color: white;
   border: none;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;

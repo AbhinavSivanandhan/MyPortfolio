@@ -57,12 +57,13 @@ const Subtitle = styled.h2`
 color: pink;
 `
 const Desc = styled.p`
-font-size: 24px;
+font-size: 34px;
 color: lightgray;
 `
 const Button = styled.button`
 background-color: pink;
 color: white;
+font-family: 'Roboto', sans-serif;
 font-width: 500; 
 width: 80px;
 padding: 10px;

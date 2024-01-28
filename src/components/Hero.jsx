@@ -57,7 +57,7 @@ const Subtitle = styled.h2`
 color: pink;
 `
 const Desc = styled.p`
-font-size: 24px;
+font-size: 34px;
 color: lightgray;
 @media only screen and (max-width: 768px){
   padding: 20px;
@@ -67,6 +67,7 @@ color: lightgray;
 const Button = styled.button`
 background-color: pink;
 color: white;
+font-family: 'Roboto', sans-serif;
 font-width: 500; 
 width: 100px;
 padding: 10px;
