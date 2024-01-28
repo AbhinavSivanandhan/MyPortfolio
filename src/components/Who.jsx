@@ -95,7 +95,9 @@ const Who = () => {
             <Desc>
               Crafting innovative solutions that bridge the gap between technology and real-world challenges.
             </Desc>
+            <a href="https://github.com/AbhinavSivanandhan/" target="_blank">
             <Button>Go for it!</Button>
+            </a>
             </Right>
           </Container>
         </Section>

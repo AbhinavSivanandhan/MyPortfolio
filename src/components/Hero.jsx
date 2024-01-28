@@ -118,7 +118,9 @@ const Hero = () => {
             <Desc>
               Explore my journey in software development. Let's build the future together! 🚀
             </Desc>
+            <a href="https://www.linkedin.com/in/abhinav-sivanandhan/" target="_blank">
             <Button>Learn More</Button>
+            </a>
             </Left>
             <Right>
             <Canvas camera={{fov: 25, position: [5, 5, 5] }}>
