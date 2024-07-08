@@ -1,91 +1,79 @@
 # MyPortfolio
 Portfolio Website
 
+# Portfolio Deployment Settings
 
-Render Deployment settings(dump details-format later):
-General
-Name
-A unique name for your Static Site.
+### General
 
-abhinavsivanandhan-portfolio
-Edit
-Build & Deploy
-Repository
-The repository used for your Static Site.
+**Name:**  
+Unique name for your Static Site:  
+`abhinavsivanandhan-portfolio`
 
-https://github.com/AbhinavSivanandhan/MyPortfolio
-Edit
-Branch
-The repository branch used for your Static Site.
+### Build & Deploy
 
+**Repository:**  
+URL of the repository:  
+`https://github.com/AbhinavSivanandhan/MyPortfolio`
 
-main
-Edit
-Root DirectoryOptional
-Defaults to repository root. When you specify a root directory that is different from your repository root, Render runs all your commands in the specified directory and ignores changes outside the directory.
+**Branch:**  
+Repository branch to be used:  
+`main`
 
-.
-Edit
-Build Filters
-Filter for files and paths to monitor for automatic deploys. Learn about build filters. Filter paths are absolute. If you've defined a root directory, you can still define paths outside of the root directory.
+**Root Directory (Optional):**  
+Directory where commands will run (defaults to repository root):  
+`.`
 
-Edit
-Included Paths
-Changes that match these paths will trigger a new build.
+**Build Filters:**  
+Filters for files and paths to monitor for automatic deploys. Paths are absolute.
 
-Add Included Path
-Ignored Paths
-Changes that match these paths will not trigger a new build.
+- **Included Paths:**  
+  Paths that trigger a new build when changed.  
+  *Add Included Path*
 
-Add Ignored Path
-Build Command
-This command runs in the root directory of your repository when a new version of your code is pushed, or when you deploy manually. It is typically a script that installs libraries, runs migrations, or compiles resources needed by your app.
+- **Ignored Paths:**  
+  Paths that do not trigger a new build when changed.  
+  *Add Ignored Path*
+
+**Build Command:**  
+Command to run in the root directory when a new version of the code is pushed or deployed manually:  
 
 ./
 npm install
 $
-Edit
-Publish directory
-The relative path of the directory containing built assets to publish. Examples: ./, ./build, dist and frontend/build.
-
-./
-dist
-Edit
-Auto-Deploy
-Automatic deploy on every push to your repository or changes to your service? Select "No" to handle your deploys manually. Automatic deploys not working as expected? Troubleshoot your GitHub connection.
 
 
-Yes
-Edit
-Deploy Hook
-Your private URL to trigger a deploy for this server. Remember to keep this a secret.
+**Publish Directory:**  
+Relative path of the directory containing built assets to publish (e.g., `./`, `./build`, `dist`, `frontend/build`):  
+`./dist`
 
-https://api.render.com/deploy/srv-cm778bmd3nmc73as9i80?key=_wQ8tIU6w2Q
- 
-Regenerate Hook
-Custom Domains
-Your service is always available at https://abhinavsivanandhan-portfolio.onrender.com.
+**Auto-Deploy:**  
+Automatically deploy on every push to the repository or changes to the service?  
+*Yes*
 
-You can also point custom domains you own to this service. See DNS configuration instructions.
+**Deploy Hook:**  
+Private URL to trigger a deploy for this server (keep this secret):  
+`https://api.render.com/deploy/srv-cm778bmd3nmc73as9i80?key=_wQ8tIU6w2Q`
 
-Add Custom Domain
-PR Previews
-Pull Request Previews
-Enabled to automatically create a preview URL for every new pull request created on the main branch in AbhinavSivanandhan/MyPortfolio. Pull Request Previews create a new instance for just this service. Use Preview Environments to clone a group of services for every PR.
+### Custom Domains
 
+Service URL: `https://abhinavsivanandhan-portfolio.onrender.com`
 
-Disabled
-Edit
-Notifications
-Service Notifications
-Set notifications to receive for your service. This setting will override your account’s default settings.
+Point custom domains to this service. See [DNS configuration instructions](https://render.com/docs/custom-domains).
 
+*Add Custom Domain*
 
-Use account default (Only failure notifications)
-Edit
-Preview Environment Notifications
-Configure notifications for preview environments and service previews.
+### PR Previews
 
+**Pull Request Previews:**  
+Automatically create a preview URL for every new pull request created on the main branch:  
+*Disabled*
 
-Use account default (Disabled)
-Edit
+### Notifications
+
+**Service Notifications:**  
+Set notifications for your service (overrides account default settings):  
+*Use account default (Only failure notifications)*
+
+**Preview Environment Notifications:**  
+Configure notifications for preview environments and service previews:  
+*Use account default (Disabled)*
