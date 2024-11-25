@@ -46,14 +46,6 @@ $
 Relative path of the directory containing built assets to publish (e.g., `./`, `./build`, `dist`, `frontend/build`):  
 `./dist`
 
-**Auto-Deploy:**  
-Automatically deploy on every push to the repository or changes to the service?  
-*Yes*
-
-**Deploy Hook:**  
-Private URL to trigger a deploy for this server (keep this secret):  
-`https://api.render.com/deploy/srv-cm778bmd3nmc73as9i80?key=_wQ8tIU6w2Q`
-
 ### Custom Domains
 
 Service URL: `https://abhinavsivanandhan-portfolio.onrender.com`
